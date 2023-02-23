@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "314191484340",
+    "project_id": "mechanic-diagnosis",
+    "storage_bucket": "mechanic-diagnosis.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:314191484340:android:bdb52db37a968d0d528ee1",
+        "android_client_info": {
+          "package_name": "com.example.mechanic_dignosis_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "314191484340-7je9cvpv1eupjgig547jdpu6gad5vqa5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDjaY-kwZbrEpojNS9QKKO1W0Nd5NoAG70"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "314191484340-7je9cvpv1eupjgig547jdpu6gad5vqa5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
