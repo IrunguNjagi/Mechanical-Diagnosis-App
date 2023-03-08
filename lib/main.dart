@@ -1,6 +1,8 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:mechanic_dignosis_app/screens/landing_page.dart';
+import 'package:mechanic_dignosis_app/screens/mechanic_search_page.dart';
+import 'package:mechanic_dignosis_app/screens/symptom_page.dart';
 
 
 void main() async {
@@ -19,7 +21,8 @@ class MyApp extends StatelessWidget {
           primarySwatch: Colors.blue,
           visualDensity: VisualDensity.adaptivePlatformDensity,
         ),
-      home: LandingPage()
+      debugShowCheckedModeBanner: false,
+      home: LandingPage(),
 
     );
   }
