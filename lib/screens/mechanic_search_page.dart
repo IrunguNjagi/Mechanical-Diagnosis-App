@@ -13,9 +13,9 @@ class _Search_PageState extends State<Search_Page> {
   static List<MechanicModel> main_garage_list = [
     MechanicModel("TJ & U Auto Shop", "Panel Beating", "Lunga Lunga Road", 5.0, '+254700350811'),
     MechanicModel("Tbandz Auto Shop", "Spray Painting", "Enterprise Road", 5.0,"+254700350811"),
-    MechanicModel("TJ & U Auto Shop", "Panel Beating", "Lunga Lunga Road", 5.0,"+254700350811"),
-    MechanicModel("TJ & U Auto Shop", "Panel Beating", "Lunga Lunga Road", 5.0,"+254700350811"),
-    MechanicModel("TJ & U Auto Shop", "Panel Beating", "Lunga Lunga Road", 5.0,"+254700350811"),
+    MechanicModel("PG Electrics Auto Shop", "Alternator Replacements", "Daresalaam Road", 5.0,"+254700350811"),
+    MechanicModel("Gone Clr Garage", "Tire Alignment, Fitting", "Rabai Road", 5.0,"+254700350811"),
+    MechanicModel("Vas Auto Center", "Framework, Spray painting", "Lunga Lunga Road", 5.0,"+254700350811"),
     MechanicModel("TJ & U Auto Shop", "Panel Beating", "Lunga Lunga Road", 5.0,"+254700350811"),
     MechanicModel("TJ & U Auto Shop", "Panel Beating", "Lunga Lunga Road", 5.0,"+254700350811"),
     MechanicModel("TJ & U Auto Shop", "Panel Beating", "Lunga Lunga Road", 5.0,"+254700350811"),

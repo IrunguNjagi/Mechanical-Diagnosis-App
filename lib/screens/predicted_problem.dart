@@ -1,10 +1,14 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
+import 'package:mechanic_dignosis_app/list_content/mechanic_garage_list.dart';
 import 'package:mechanic_dignosis_app/screens/mechanic_search_page.dart';
 
 class PredictedProblem extends StatefulWidget {
   final List<String> symptoms;
   String name;
+  String suggestedMechanic = "";
+
+
 
   PredictedProblem({@required this.symptoms, this.name = "No results found"});
 
@@ -76,6 +80,7 @@ class _PredictedProblemState extends State<PredictedProblem> {
                     if (snapshot.hasData) {
                       final malfunctions = snapshot.data.docs;
                       List<Widget> predictedMalfunctions = [];
+                      List<MechanicModel> suggestedMechanics = [];
                       for (var malfunction in malfunctions) {
                         final malfunctionData = malfunction.data();
                         priorityMap[malfunction.id] = 0;
@@ -96,26 +101,11 @@ class _PredictedProblemState extends State<PredictedProblem> {
                                   fontWeight: FontWeight.w500,
                                 ),
                               ),
-                              subtitle: priorityMap[key] > 3
-                                  ? Text(
-                                      "High Probability",
-                                      style: TextStyle(
-                                          fontSize: 17.5,
-                                          fontWeight: FontWeight.w500,
-                                          color: Color(0xfff53920)),
-                                    )
-                                  : Text(
-                                      "Low Probability",
-                                      style: TextStyle(
-                                        fontSize: 18,
-                                        fontWeight: FontWeight.w700,
-                                        color: Colors.pink,
-                                      ),
-                                    ),
                             ),
                           );
                         }
                       }
+
                       if (predictedMalfunctions.isNotEmpty) {
                         return Padding(
                           padding: const EdgeInsets.all(12.0),
